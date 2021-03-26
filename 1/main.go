@@ -16,6 +16,7 @@ func BinaryGap(n int) int {
 	var count []int
 	for i := 0; i < len(binary); i++ {
 		//fmt.Println(binary[i])
+		//binary[i]--> rune(1-->49, 0-->48)
 		if binary[i] == 49 {
 			//fmt.Println(" if true")
 			gap := 0
@@ -31,9 +32,17 @@ func BinaryGap(n int) int {
 				}
 			}
 			//fmt.Println("gap", gap)
+			//binary gap means 10001 -- gap is 3, if last element is not 1 after getting
+			//consecutive 0, then it will not consider gap such as 10000--- no gap
+			//so binary[j] -- last element and value is stil 0  we will not add to the slice
+			//if not last element and loop has stopped because of occurence of 1 , then that
+			//should be added to the slice
+			//this is the tricky part
 			if j != len(binary) {
 				count = append(count, gap)
 			}
+			//if this condition is true means for loop has stopped because of occurence of 1
+			//not because of last element
 
 		}
 	}
