@@ -1,0 +1,9 @@
+Given an array A = [1,0,1,0,1,1] the function should return 1. After reversing the sixth position
+value we achieve an alternating sequence of coins [1,0,1,0,1,0]
+
+Given an array A = [1,1,0,1,1] the function should return 2
+after reversing the first and fifth coins. We achieve an alternating sequence [0,1,0,1,0]
+
+Given an Array A = [0,1,0], the function should return 0, the sequence of coins already alternating.
+
+Given an Array A = [0,1,1,0] the function should return 2. We can reverse the first and second coin to get the sequence [0,1,0,1]
