@@ -1,5 +1,4 @@
-import java.lang.ref.Cleaner;
-import java.util.HashMap;
+
 import java.util.Stack;
 
 class Fish{
